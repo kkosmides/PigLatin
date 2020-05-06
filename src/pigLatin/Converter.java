@@ -26,7 +26,7 @@ public class Converter extends JPanel implements KeyListener {
 	public String wordChecker(String str) {
 		pigLatin = "";
 		str = str.toLowerCase();
-		str = str.replaceAll("[-+,.!]", "");
+		str = str.replaceAll("[-+,.!/]", "");
 		if (str.contains(" ")) {
 			this.multipleWords(str);
 		}
